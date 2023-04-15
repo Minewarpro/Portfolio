@@ -7,22 +7,91 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Logo</a>
+        <a class="logo">Logo</a>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
-    <section class="banner"></section>
+
+    <!-- Sticky Scroll Bar Js -->
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0)
         })
     </script>
+    <!-- End Sticky Scroll Bar Js -->
+
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner container">
+            <div>
+                <h1>Hello, <span></span></h1>
+                <h1>My Name is <span></span></h1>
+                <h1>Hugo <span></span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Banner Section -->
+
+    <!-- Service Section -->
+    <section id ="services">
+        <div class="services container">
+            <div class="services-top">
+                <h1 class="section-title">Services</h1>
+                <p>Ceci est mon texte expliquant les services que je propose -
+                    Ceci est mon texte expliquant les services que je propose -
+                    Ceci est mon texte expliquant les services que je propose -
+                    Ceci est mon texte expliquant les services que je propose -
+                    Ceci est mon texte expliquant les services que je propose -
+                    Ceci est mon texte expliquant les services que je propose -
+                    Ceci est mon texte expliquant les services que je propose -
+                    Ceci est mon texte expliquant les services que je propose -</p>
+                </div>
+            <div class="services-bottom">
+
+                <!-- Service 1 -->
+                <div class="services-item">
+                    <div class="icon"><img src="Image/Services-Icon.png" width="50"/></div>
+                <h2>Web Design</h2>
+                <p>Ceci est mon texte expliquant le service en question</p>
+                </div>
+                <!-- End Service 1 -->
+
+                <!-- Service 2 -->
+                <div class="services-item">
+                    <div class="icon"><img src="Image/Services-Icon.png" width="50" /></div>
+                <h2>Web Design</h2>
+                <p>Ceci est mon texte expliquant le service en question</p>
+                </div>
+                <!-- End Service 2 -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+
+
+
+    <!-- About Section -->
+    <section id ="about">
+        <div class="about container">
+            <div>
+                <h1>About</h1>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+
+
 </body>
 </html>
