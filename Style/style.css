@@ -342,7 +342,7 @@ p {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0;
+    opacity: 0.2;
 }
 #projects .project-img img {
     transition: 0.3s ease transform;
@@ -358,6 +358,33 @@ p {
     background-color: #20f342;
     text-align: center;
 }
+#projects .project-footer {
+    background-image: linear-gradient(60deg, #121834 0%, #202431 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-footer h1{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding: 40px;
+    transition: 0.3s ease transform;
+}
+#projects .project-footer:hover h1{
+    transform: scale(1.05);
+}
+#projects h1 span{
+    color: deepskyblue;
+}
+/*Project 1 Unchained*/
 #projects .project-item:nth-child(1) .project-info span:nth-child(1) {
     background-color: #3b58d0;
 }
@@ -365,9 +392,13 @@ p {
     background-color: #b03434;
 }
 #projects .project-item:nth-child(1) .project-info span:nth-child(3) {
+    background-color: #5d34b0;
+}
+#projects .project-item:nth-child(1) .project-info span:nth-child(4) {
     background-color: #b09334;
 }
 
+/*Project 2 Ylmo*/
 #projects .project-item:nth-child(2) .project-info span:nth-child(1) {
     background-color: #3b58d0;
 }
@@ -383,6 +414,20 @@ p {
 #projects .project-item:nth-child(2) .project-info span:nth-child(5) {
     background-color: #b09334;
 }
+/*Project 3 Block Run*/
+#projects .project-item:nth-child(3) .project-info span:nth-child(1) {
+    background-color: #3b58d0;
+}
+#projects .project-item:nth-child(3) .project-info span:nth-child(2) {
+    background-color: #b03434;
+}
+#projects .project-item:nth-child(3) .project-info span:nth-child(3) {
+    background-color: #5d34b0;
+}
+#projects .project-item:nth-child(3) .project-info span:nth-child(4) {
+    background-color: #b09334;
+}
+
 /* End Projects section */
 
 /* About Section */
@@ -424,12 +469,7 @@ p {
     padding: 10px 20px;
     font-size: 2rem;
 }
-#about .col-left .about-img {
-    height: 100%;
-    position: relative;
-    border: 10px solid deepskyblue;
-    z-index: 0;
-}
+
 
 
 /* End About Section */
@@ -454,6 +494,7 @@ p {
 #contact .section-title
 {
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 #contact .contact-item {
     width: 80%;
@@ -465,16 +506,16 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: 0.3s ease box-shadow;
-    background-color: white;
-}
-#contact .contact-item:hover {
-    box-shadow: 0px 0px 5px 0 rgba(179, 192, 234, 0.17);
+    color: white;
+    background-image: linear-gradient(60deg, #212338 0%, #2c2c42 100%);
 }
 #contact .icon {
     width: 70px;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+#contact .icon img{
+    width: 60px;
 }
 #contact .contact-info h1 {
     font-size: 2.5rem;
@@ -482,10 +523,11 @@ p {
     margin-bottom: 5px;
 }
 #contact .contact-info h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 500;
 }
+
 /*End contact Section */
 
 /* Footer */
@@ -600,8 +642,12 @@ p {
     #projects .all-projects .project-info {
         height: 100%;
     }
+
     #projects .all-projects .project-img {
         height: 100%;
+    }
+    #projects .project-footer h1{
+        font-size: 2rem;
     }
     /* End Project */
 
@@ -631,6 +677,11 @@ p {
     /* End About */
 
     /* contact  */
+    #contact .section-title
+    {
+        margin-top: 0px;
+    }
+
     #contact .contact {
         flex-direction: column;
         padding: 100px 0;
@@ -701,6 +752,15 @@ p {
     }
     #about .col-right h2 {
         font-size: 24px;
+    }
+
+    #projects .project-footer h1{
+        font-size: 4rem;
+    }
+
+    #contact .section-title
+    {
+        margin-top: 0px;
     }
 }
 /* End  Media Query For Desktop */
