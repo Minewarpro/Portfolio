@@ -25,6 +25,12 @@ img {
     width: 100%;
     object-fit: cover;
 }
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    play-during: repeat;
+}
 p {
     color: black;
     font-size: 1.4rem;
@@ -203,7 +209,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url(../Image/Bubble_01.jpg);
+    background-image: url(../Image/Game_Landscape.png);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -345,19 +351,23 @@ p {
     opacity: 0.2;
 }
 #projects .project-img img {
-    transition: 0.3s ease transform;
+    /*transition: 0.3s ease transform;*/
     transform: scale(1.1);
 }
-#projects .project-item:hover .project-img img {
-    transform: scale(1.2);
+
+#projects .project-item:hover .project-img video {
+    /*transform: scale(1.2);*/
+
 }
-#projects .project-info span{
-    margin-right: 10px;
-    padding: 2px 7px;
-    border-radius: 10px;
-    background-color: #20f342;
-    text-align: center;
+
+#projects .project-img video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
+
+
 #projects .project-footer {
     background-image: linear-gradient(60deg, #121834 0%, #202431 100%);
     display: flex;
@@ -573,11 +583,11 @@ p {
 /* Keyframes */
 @keyframes hamburger_puls {
     0% {
-        opacity: 1;
+        opacity: 0;
         transform: scale(1);
     }
     100% {
-        opacity: 0;
+        opacity: 1;
         transform: scale(1.4);
     }
 }
@@ -601,6 +611,15 @@ p {
         color: deepskyblue;
     }
 }
+@keyframes video_reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* End Keyframes */
 
 /* Media Query For Tablet */

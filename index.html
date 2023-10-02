@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/style.css">
-    <title>Roche Hugo | Portfolio</title>
+    <title>Portfolio | Roche Hugo</title>
 </head>
 
 <body>
@@ -23,8 +23,8 @@
                     <div class="bar"></div>
                 </div>
                 <ul>
-                    <li><a href="#about" data-after="About">About</a></li>
                     <li><a href="#projects" data-after="Projects">Projects</a></li>
+                    <li><a href="#about" data-after="About">About</a></li>
                     <li><a href="#contact" data-after="Contact">Contact</a></li>
                 </ul>
             </div>
@@ -33,18 +33,79 @@
 </section>
 <!-- End Header -->
 
-
 <!-- Hero Section  -->
 <section id="hero">
     <div class="hero container">
         <div>
             <h1>Gameplay <span></span></h1>
             <h1>Programmer <span></span></h1>
-            <a href="#projects" type="button" class="cta">Portfolio</a>
         </div>
     </div>
 </section>
 <!-- End Hero Section  -->
+
+<!-- Projects Section -->
+<section id="projects">
+
+
+    <div class="projects container" >
+        <div class="projects-header">
+            <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects" >
+            <div class="project-item" onmouseover="play(video)" onmouseout="pause(video, 'Video/GifCourseBoulet.mp4')">
+                <div class="project-info" >
+                    <h1>Unchained</h1>
+                    <h2><span>Unreal 5</span> <span>PC</span> <span>Node</span> <span>Group</span></h2>
+                    <p>I found this one very interesting because I had to create a new mechanic based on physics.
+                        The player is attached to a ball and chain. The entire gameplay is based on this.
+                        It was my first group project. </p>
+                    <p>"You wake up locked in a cave, tied to a ball and chain. It could be your best friend or your worst enemy.
+                        It's up to you to use it skillfully to solve the puzzles and regain your freedom."</p>
+                </div>
+                <div class="project-img" >
+                    <video id="video" loop poster="Image/Unchained.jpg" class="video" >
+                        <source src="Video/GifCourseBoulet.mp4" type=video/mp4>
+                    </video>
+                </div>
+            </div>
+            <div class="project-item" onmouseover="play(video_1)" onmouseout="pause(video_1, 'Video/GifBreakCaisseBoulet.mp4')">
+                <div class="project-info">
+                    <h1>Ylmo</h1>
+                    <h2><span>Phaser</span> <span>Web</span> <span>PC</span> <span>JavaScript</span></h2>
+                    <p>This game is played directly on a web browser. It's a 2d platformer with an Ori-inspired atmosphere.
+                        It's my first finished and polished video game. </p>
+                    <p>"You play a little will-o'-the-wisp and have to escape the dragon to save your life! This platformer is, for the most part, a runner."</p>
+                </div>
+                <div class="project-img">
+                    <video id="video_1" loop poster="Image/Ylmo.jpg" class="video" >
+                        <source src="Video/GifBreakCaisseBoulet.mp4" type=video/mp4>
+                    </video>
+                </div>
+            </div>
+            <div class="project-item" onmouseover="play(video_2)" onmouseout="pause(video_2, 'Video/GifCourseBoulet.mp4')">
+                <div class="project-info">
+                    <h1>Block Run</h1>
+                    <h2><span>Unity</span> <span>Mobile</span> <span>C#</span></h2>
+                    <p>A little bit of easy fun? It's a game based on instant fun. The mechanics are simple,
+                        but the polish has been pushed to the maximum for the smoothest and most enjoyable experience possible.  </p>
+                    <p>Test your speed and get the best possible score! Challenge your friends and show them who's faster!</p>
+                </div>
+                <div class="project-img">
+                    <video id="video_2" loop poster="Image/BlockRun.png" class="video" >
+                        <source src="Video/GifCourseBoulet.mp4" type=video/mp4>
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="project-footer">
+            <a href="https://minewarpro.itch.io">
+                <h1>For all my <span>published projects</span> click here</h1>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- End Projects Section -->
 
 <!-- About Section -->
 <section id="about">
@@ -68,64 +129,6 @@
     </div>
 </section>
 <!-- End About Section -->
-
-<!-- Projects Section -->
-<section id="projects">
-
-    <div class="projects container">
-        <div class="projects-header">
-            <h1 class="section-title">Recent <span>Projects</span></h1>
-        </div>
-        <div class="all-projects">
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Unchained</h1>
-                    <h2><span>Unreal 5</span> <span>PC</span> <span>Node</span> <span>Group</span></h2>
-                    <p>I found this one very interesting because I had to create a new mechanic based on physics.
-                        The player is attached to a ball and chain. The entire gameplay is based on this.
-                        It was my first group project. </p>
-                    <p>"You wake up locked in a cave, tied to a ball and chain. It could be your best friend or your worst enemy.
-                        It's up to you to use it skillfully to solve the puzzles and regain your freedom."</p>
-                </div>
-                <div class="project-img">
-                        <img src="Image/Unchained.jpg" alt="img">
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Ylmo</h1>
-                    <h2><span>Phaser</span> <span>Web</span> <span>PC</span> <span>JavaScript</span></h2>
-                    <p>This game is played directly on a web browser. It's a 2d platformer with an Ori-inspired atmosphere.
-                        It's my first finished and polished video game. </p>
-                    <p>"You play a little will-o'-the-wisp and have to escape the dragon to save your life! This platformer is, for the most part, a runner."</p>
-                </div>
-                <div class="project-img">
-                    <img src="Image/Ylmo.jpg" alt="img">
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Block Run</h1>
-                    <h2><span>Unity</span> <span>Mobile</span> <span>C#</span></h2>
-                    <p>A little bit of easy fun? It's a game based on instant fun. The mechanics are simple,
-                        but the polish has been pushed to the maximum for the smoothest and most enjoyable experience possible.  </p>
-                    <p>Test your speed and get the best possible score! Challenge your friends and show them who's faster!</p>
-                </div>
-                <div class="project-img">
-                    <img src="Image/BlockRun.png" alt="img">
-                </div>
-            </div>
-        </div>
-        <div class="project-footer">
-            <a href="https://minewarpro.itch.io">
-                <h1>For all my <span>published projects</span> click here</h1>
-            </a>
-        </div>
-    </div>
-</section>
-<!-- End Projects Section -->
-
-
 
 <!-- Contact Section -->
 <section id="contact">
