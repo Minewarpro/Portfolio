@@ -394,7 +394,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
+    width: 60%;
     margin: 30px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -654,7 +654,7 @@ p {
         height: 100%;
     }
     #projects .project-footer {
-        width: 20%;
+        width: 40%;
     }
     #projects .project-footer h1{
         font-size: 3rem;
@@ -782,7 +782,7 @@ p {
 
     #contact .section-title
     {
-        margin-top: 0px;
+        margin-top: 0;
     }
     #projects .project-cover{
         margin: 50px 0;

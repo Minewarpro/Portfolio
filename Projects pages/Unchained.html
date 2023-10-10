@@ -128,7 +128,7 @@
                 <h2>● The Ball and Chain</h2>
                 <div class="gif-container">
                     <div class="gif-info">
-                        <h3>Physics Interaction</h3>
+                        <h3>Physics Constraints</h3>
                         <p>La chaine est attaché au player et le boulet à la chaine. Chacun restrein un autre element.</p>
                         <p>La chaine est très stable et ne passe pas à travers les props malgrès les contreintes qui lui sont appliqués.</p>
                         <p>Le boulet et la chaine peuvent interagir avec n'importe qu'elle autre element physique sans bug.</p>
@@ -137,7 +137,14 @@
                         <img src="../Gif/DemoChain.gif" alt="gif">
                     </div>
                 </div>
+
+                <h3>The technical challenge</h3>
+                <p>Ce qui a été notre plus gros soucis se sont les forces appliqués sur la chaine. Je m'explique, si la chaine subit des forces contraires trop importante
+                    venant d'une extremité et d'une autre, les maillons se séparaient causant des bugs physiques et visuels.</p>
+                <p>Mais en utilisant un rig citer plus haut et en ajustant les valeurs, nous sommes arrivé à avoir une chaine très stable. </p>
+
                 <div class="gif-container">
+
                     <div class="gif-info">
                         <h3>Chain Rig</h3>
                         <p>La chaine est entierement en physique. Après de nombreux tests, le rig semble être la meilleur option pour avoir une chaine stable sans bug.</p>
@@ -148,24 +155,43 @@
                         <img src="../Gif/ChainRigGif.gif" alt="gif">
                     </div>
                 </div>
-                <h3>Evironment Interactions</h3>
-                <p>Ici il y a quelques interactions possible avec ce systeme de ball and chain en physique.</p>
+
+                <h2>● What can we do with this system ?</h2>
+
+                <p>Grâce à cette stabilité le joueur peut se suspendre ou attraper le boulet pour tirer dessus sans qu'elle ne se brise !</p>
                 <div class="gif-container">
                     <div class="gif">
-                        <img src="../Gif/ChainRigGif.gif" alt="gif">
+                        <img src="../Gif/SlideGif.gif" alt="gif">
                     </div>
                     <div class="gif">
-                        <img src="../Gif/ChainRigGif.gif" alt="gif">
+                        <img src="../Gif/PorteGif.gif" alt="gif">
                     </div>
                 </div>
+                <p></p>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Feeling of constraint</h3>
+                        <p>Le joueur est limité dans ses déplacements lorsque la chaine est tendue.</p>
+                        <p>Pour arriver à ce résultats il suffit d'augmenté le damping du boulet lorsqu'il est au sol se qui a pour effet d'empecher le boulet d'aller
+                            trop vite et par extension le joueur aussi.</p>
+                        <p></p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/TrainerGif.gif" alt="gif">
+                    </div>
+                </div>
+                <h2>● A little bit of easy fun ?</h2>
+                <p>Le joueur a la possibilité d'attraper n'importe quel élément physique et par consequent son boulet. On s'est dit alors que lancé son boulet pour casser tout s'était pas mal.</p>
                 <div class="gif-container">
                     <div class="gif">
-                        <img src="../Gif/ChainRigGif.gif" alt="gif">
+                        <img src="../Gif/BreakGif.gif" alt="gif">
                     </div>
-                    <div class="gif">
-                        <img src="../Gif/ChainRigGif.gif" alt="gif">
+                    <div class="gif-info">
+                        <p>Dans le jeu tout les éléments avec la texture de bois effrité peut etre cassé en envoyant notre boulet dessus.</p>
                     </div>
                 </div>
+
                 <h2>● The Player</h2>
             </div>
         </div>
