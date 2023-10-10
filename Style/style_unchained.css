@@ -87,6 +87,24 @@ body {
 
 }
 
+.download-link{
+    display: flex;
+}
+
+.download-link p{
+    color : white;
+    margin-top: 40px;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    background-image: linear-gradient(30deg, #009dd3 0%, #00bfff 100%);
+    border-radius: 5px;
+    padding: 12px 25px;
+    text-align: center;
+}
+
 
 
 /* Header section */
@@ -265,6 +283,10 @@ body {
 #overview .overview-facts-cell {
     padding: 5px;
 }
+#overview .overview-facts-cell span{
+    color: deepskyblue;
+    font-weight: bold;
+}
 
 #overview .overview-resume {
     text-align: center;
@@ -287,7 +309,7 @@ body {
 #overview .overview-trailer-header{
     text-align: left;
     width: 60%;
-    padding-top: 100px;
+    padding-top: 60px;
     position: relative;
 }
 #overview .overview-trailer-header h1{
@@ -315,6 +337,13 @@ body {
     width: 50%;
     height: max-content;
     align-self: center;
+    margin: 0 15px;
+}
+
+#overview .details-container p{
+    font-size: 18px;
+    text-align: left;
+    margin: 15px 0;
 }
 #overview .gif-container p{
     font-size: 18px;
@@ -352,7 +381,7 @@ body {
     margin-bottom: 30px;
     margin-top: 30px;
 }
-#overview .details-container h3{
+#overview h3{
     font-family: "Lato", sans-serif;
     font-size: 20px;
 }
