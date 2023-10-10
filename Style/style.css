@@ -208,7 +208,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url(../Image/Game_Landscape.png);
+    background-image: url(../Image/Calque1.jpg);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -231,10 +231,11 @@ p {
 
 #hero .container{
     min-height: 100vh;
+
 }
 
 #hero .hero {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 100px;
     justify-content: flex-start;
