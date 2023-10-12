@@ -129,9 +129,9 @@
                 <div class="gif-container">
                     <div class="gif-info">
                         <h3>Physics Constraints</h3>
-                        <p>La chaine est attaché au player et le boulet à la chaine. Chacun restrein un autre element.</p>
-                        <p>La chaine est très stable et ne passe pas à travers les props malgrès les contreintes qui lui sont appliqués.</p>
-                        <p>Le boulet et la chaine peuvent interagir avec n'importe qu'elle autre element physique sans bug.</p>
+                        <p>The chain is attached to the player, and the ball is attached to the chain. Each restricts the other element.</p>
+                        <p>The chain is very stable and doesn't pass through obstacles despite the constraints applied to it.</p>
+                        <p>The ball and the chain can interact with any other physical element without any issues.</p>
                     </div>
                     <div class="gif">
                         <img src="../Gif/DemoChain.gif" alt="gif">
@@ -139,17 +139,17 @@
                 </div>
 
                 <h3>The technical challenge</h3>
-                <p>Ce qui a été notre plus gros soucis se sont les forces appliqués sur la chaine. Je m'explique, si la chaine subit des forces contraires trop importante
-                    venant d'une extremité et d'une autre, les maillons se séparaient causant des bugs physiques et visuels.</p>
-                <p>Mais en utilisant un rig citer plus haut et en ajustant les valeurs, nous sommes arrivé à avoir une chaine très stable. </p>
+                <p>What has been our biggest concern are the forces applied to the chain. Let me explain, if the chain experiences excessive opposing forces from both ends,
+                    the links would separate, causing physical and visual glitches.</p>
+                <p>But by using a rig and adjusting the values, we managed to achieve a very stable chain. </p>
 
                 <div class="gif-container">
 
                     <div class="gif-info">
                         <h3>Chain Rig</h3>
-                        <p>La chaine est entierement en physique. Après de nombreux tests, le rig semble être la meilleur option pour avoir une chaine stable sans bug.</p>
-                        <p>Le rig permet la modification de nombreux parametres tels que le poids, le damping ou l'inertia tensor. </p>
-                        <p>Les collisions sont en forme de rectangle car se sont ceux qui fonctionnent le mieux avec les autres elements de gameplay physics.</p>
+                        <p>The chain is entirely physics-based. After numerous tests, the rig seems to be the best option for achieving a stable chain without any glitches.</p>
+                        <p>The rig allows for the adjustment of various parameters, such as weight, damping, and inertia tensor. </p>
+                        <p>Rectangular collisions are used because they work best with the other elements of gameplay physics.</p>
                     </div>
                     <div class="gif">
                         <img src="../Gif/ChainRigGif.gif" alt="gif">
@@ -158,7 +158,7 @@
 
                 <h2>● What can we do with this system ?</h2>
 
-                <p>Grâce à cette stabilité le joueur peut se suspendre ou attraper le boulet pour tirer dessus sans qu'elle ne se brise !</p>
+                <p>Thanks to this stability, the player can hang from or grab the ball to pull on it without it breaking !</p>
                 <div class="gif-container">
                     <div class="gif">
                         <img src="../Gif/SlideGif.gif" alt="gif">
@@ -172,9 +172,9 @@
                 <div class="gif-container">
                     <div class="gif-info">
                         <h3>Feeling of constraint</h3>
-                        <p>Le joueur est limité dans ses déplacements lorsque la chaine est tendue.</p>
-                        <p>Pour arriver à ce résultats il suffit d'augmenté le damping du boulet lorsqu'il est au sol se qui a pour effet d'empecher le boulet d'aller
-                            trop vite et par extension le joueur aussi.</p>
+                        <p>The player is limited in their movements when the chain is taut.</p>
+                        <p>To achieve this result, you simply need to increase the damping of the ball when it's on the ground, which prevents the ball from moving too quickly,
+                            and consequently, the player as well.</p>
                         <p></p>
                     </div>
                     <div class="gif">
@@ -182,17 +182,31 @@
                     </div>
                 </div>
                 <h2>● A little bit of easy fun ?</h2>
-                <p>Le joueur a la possibilité d'attraper n'importe quel élément physique et par consequent son boulet. On s'est dit alors que lancé son boulet pour casser tout s'était pas mal.</p>
+                <p>The player has the ability to grab any physical element, including their ball. We thought that throwing the ball to break things was a good idea.</p>
                 <div class="gif-container">
                     <div class="gif">
                         <img src="../Gif/BreakGif.gif" alt="gif">
                     </div>
                     <div class="gif-info">
-                        <p>Dans le jeu tout les éléments avec la texture de bois effrité peut etre cassé en envoyant notre boulet dessus.</p>
+                        <p>In the game, all elements with the weathered wood texture can be broken by sending our ball towards them.</p>
+                        <p>It is also possible to grab crates to throw and break them.</p>
                     </div>
                 </div>
 
                 <h2>● The Player</h2>
+                <p>Managing the player was also a challenge. In Unreal Engine, the default character is derived from the <strong>"Character"</strong> class, which uses <strong>"Character Movement"</strong>.
+                    The problem with this is that it ignores physical constraints that are not predefined within it. Unfortunately, the system mentioned earlier did not work in this case.</p>
+                <p>The solution I found is to use the parent class <strong>"Pawn"</strong> and employ another movement management system, <strong>"FloatingPawnMovement"</strong>, which is much more permissive.</p>
+
+                <div class="details-img"> <img src="../Image/PawnCharacter.jpg" alt="PawnCharacter"> </div>
+
+                <h3>The counterparts</h3>
+                <p>The counterpart of this is that there are many features that don't exist, and we have to code them ourselves.</p>
+                <p>For example, we could mention the management of <strong>gravity</strong>, the <strong>Jump</strong> function, or even the <strong>On Landed </strong>event,
+                    which allows the detection of the player when they touch the ground.</p>
+
+                <h2>● What's next ?</h2>
+
             </div>
         </div>
 

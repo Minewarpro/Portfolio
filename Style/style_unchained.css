@@ -392,6 +392,11 @@ body {
     text-align: left;
 }
 
+#overview .details-img{
+    padding: 20px 150px;
+}
+
+
 
 /* contact Section */
 #contact .contact {
