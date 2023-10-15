@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style_promenade.css">
+    <title>Promenade | Roche Hugo</title>
+</head>
+
+
+<body>
+
+<!-- Header -->
+<section id="header">
+    <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a href="../index.html">
+                    <h1><span>R</span>oche <span>H</span>ugo</h1>
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="../index.html" data-after="Projects">Home</a></li>
+                    <li><a href="#contact" data-after="Projects">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Hero -->
+<section id="hero">
+    <div class="hero container"></div>
+</section>
+
+
+
+<!-- Overview -->
+<section id="overview">
+
+    <div class="overview container">
+
+        <div class ="overview-header">
+            <h1 class="section-title"><span>Promenade</span></h1>
+        </div>
+
+        <div class="overview-resume">
+            <em>"Embark on an incredible time-travel journey through Montpellier's Peyrou Park and become a fearless adventurer determined to rewrite history !"</em>
+        </div>
+
+        <div class="overview-facts-container">
+            <table style="margin: auto;">
+                <tbody>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Project Type</span>
+                        </td>
+                        <td class="overview-facts-cell"> University / Group Project</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Software Used</span>
+                        </td>
+                        <td class="overview-facts-cell"> Unity</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Languages Used</span>
+                        </td>
+                        <td class="overview-facts-cell"> C#</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Primary Rol(s)</span>
+                        </td>
+                        <td class="overview-facts-cell"> Gameplay Programming / Technical Artist</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="overview-trailer-header">
+            <h1>Full Gameplay</h1>
+        </div>
+        <div class="overview-fullGameplay">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/jckVzqHXEMg?si=Xkkwsl7sQbIgRUdg?rel=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="details-container">
+            <div class="details-header">
+                <h1>Details</h1>
+            </div>
+            <div class="details-body">
+                <h2>● Time winding system</h2>
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Date change</h3>
+                        <p>Le joueur peut simplement augmenter ou baisser la date en appuyant sur les fleches haut ou bas. Il peut ensuite voyager a la date choisi.</p>
+                        <p>Les dates disponibles sont enregistrer dans un tableau qui sont sauvegarder pour permettre au joueur de quitter le jeu sans crainte.</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/DateGif.gif" alt="gif">
+                    </div>
+                </div>
+
+
+                <div class="details-img">
+                    <h4>The code.</h4>
+                    <img src="../Image/CodeMontre.png" alt="code montre">
+                    <p>"NumberToGo" est multiplier par 36 car il y a 10 chiffres possible (0->9), il suffit donc de faire 360/10 pour trouver la bonne rotation.</p>
+                </div>
+                <h3>The time travel</h3>
+                <p>Une fois la date choisi il le joueur peut s'y rendre grace au bouton jaune juste en dessous. Pour ce faire, rien de très compliqué. Il suffit de load la scene correspondante.
+                voici le code juste en dessous.</p>
+                <div class="details-img">
+                    <img src="../Image/CodeTravel.png" alt="code montre">
+                </div>
+
+                <h2>● Mini Games</h2>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Magic coloring</h3>
+                        <p>Pour ce mini jeu le joueur doit colorier les cases avec les couleurs corespondantes. Chaque couleur est associé a une date.</p>
+                        <p>Un <strong>raycast</strong> est envoyer depuis la camera du joueur jusqu'a l'endroit ou le joueur a cliqué. Une box de detection ce
+                            cache derrière chaque partie du dessin pour receptionner ce raycast.</p>
+                        <p>Une fois le coloriage completer avec les bonnes couleur le joueur remporte le mini jeu !</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/ColoriagGif.gif" alt="gif">
+                    </div>
+                </div>
+
+
+                <h2>● A little bit of easy fun ?</h2>
+                <p>The player has the ability to grab any physical element, including their ball. We thought that throwing the ball to break things was a good idea.</p>
+                <div class="gif-container">
+                    <div class="gif">
+                        <img src="../Gif/BreakGif.gif" alt="gif">
+                    </div>
+                    <div class="gif-info">
+                        <p>In the game, all elements with the weathered wood texture can be broken by sending our ball towards them.</p>
+                        <p>It is also possible to grab crates to throw and break them.</p>
+                    </div>
+                </div>
+
+                <h2>● The Player</h2>
+                <p>Managing the player was also a challenge. In Unreal Engine, the default character is derived from the <strong>"Character"</strong> class, which uses <strong>"Character Movement"</strong>.
+                    The problem with this is that it ignores physical constraints that are not predefined within it. Unfortunately, the system mentioned earlier did not work in this case.</p>
+                <p>The solution I found is to use the parent class <strong>"Pawn"</strong> and employ another movement management system, <strong>"FloatingPawnMovement"</strong>, which is much more permissive.</p>
+
+                <div class="details-img"> <img src="../Image/PawnCharacter.jpg" alt="PawnCharacter"> </div>
+
+                <h3>The counterparts</h3>
+                <p>The counterpart of this is that there are many features that don't exist, and we have to code them ourselves.</p>
+                <p>For example, we could mention the management of <strong>gravity</strong>, the <strong>Jump</strong> function, or even the <strong>On Landed </strong>event,
+                    which allows the detection of the player when they touch the ground.</p>
+
+                <h2>● What's next ?</h2>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><img src="../Image/Phone_Logo.png" /></div>
+                <div class="contact-info">
+                    <h1>Phone</h1>
+                    <h2>07 83 06 23 44</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src=../Image/Mail_Logo.png /></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>hroche3413@gmail.com</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src=../Image/Map_Logo.png /></div>
+                <div class="contact-info">
+                    <h1>Address</h1>
+                    <h2>34070, Montpellier</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+
+<script src="../app.js"></script>
+</body>
+</html>
