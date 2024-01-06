@@ -102,13 +102,18 @@
             <div class="details-header">
                 <h1>Details</h1>
             </div>
+            <h2>● The objectives of this game</h2>
+            <p>For this project, we had to think about a serious game centered around the Jardin du Peyrou, a park located in the city of Montpellier, France.
+                We decided to show the player the significant historical stages of this park.
+                So, we came up with the idea of allowing the player to time-travel, landing them at moments marking significant changes in the park.
+            </p>
             <div class="details-body">
                 <h2>● Time winding system</h2>
                 <div class="gif-container">
                     <div class="gif-info">
                         <h3>Date change</h3>
-                        <p>Le joueur peut simplement augmenter ou baisser la date en appuyant sur les fleches haut ou bas. Il peut ensuite voyager a la date choisi.</p>
-                        <p>Les dates disponibles sont enregistrer dans un tableau qui sont sauvegarder pour permettre au joueur de quitter le jeu sans crainte.</p>
+                        <p>The player can simply increase or decrease the date by pressing the up or down arrows. They can then travel to the chosen date.</p>
+                        <p>The available dates are stored in an array that is saved to allow the player to exit the game without concern.</p>
                     </div>
                     <div class="gif">
                         <img src="../Gif/DateGif.gif" alt="gif">
@@ -119,11 +124,11 @@
                 <div class="details-img">
                     <h4>The code.</h4>
                     <img src="../Image/CodeMontre.png" alt="code montre">
-                    <p>"NumberToGo" est multiplier par 36 car il y a 10 chiffres possible (0->9), il suffit donc de faire 360/10 pour trouver la bonne rotation.</p>
+                    <p>"NumberToGo" is multiplied by 36 because there are 10 possible digits (0 to 9), so it's sufficient to calculate 360/10 to find the correct rotation.</p>
                 </div>
                 <h3>The time travel</h3>
-                <p>Une fois la date choisi il le joueur peut s'y rendre grace au bouton jaune juste en dessous. Pour ce faire, rien de très compliqué. Il suffit de load la scene correspondante.
-                voici le code juste en dessous.</p>
+                <p>Once the date is chosen, the player can go there using the yellow button just below. To do this, nothing very complicated. It's enough to load the corresponding scene.
+                    Here's the code just below.</p>
                 <div class="details-img">
                     <img src="../Image/CodeTravel.png" alt="code montre">
                 </div>
@@ -133,42 +138,38 @@
                 <div class="gif-container">
                     <div class="gif-info">
                         <h3>Magic coloring</h3>
-                        <p>Pour ce mini jeu le joueur doit colorier les cases avec les couleurs corespondantes. Chaque couleur est associé a une date.</p>
-                        <p>Un <strong>raycast</strong> est envoyer depuis la camera du joueur jusqu'a l'endroit ou le joueur a cliqué. Une box de detection ce
-                            cache derrière chaque partie du dessin pour receptionner ce raycast.</p>
-                        <p>Une fois le coloriage completer avec les bonnes couleur le joueur remporte le mini jeu !</p>
+                        <p>For this mini-game, the player has to color the boxes with the corresponding colors. Each color is associated with a date.</p>
+                        <p>A <strong>raycast</strong> is sent from the player's camera to the point where the player clicked. A detection box is hidden behind each part of the drawing to receive this raycast.</p>
+                        <p>Once the coloring is complete with the correct colors, the player wins the mini-game !</p>
                     </div>
                     <div class="gif">
                         <img src="../Gif/ColoriagGif.gif" alt="gif">
                     </div>
                 </div>
 
-
-                <h2>● A little bit of easy fun ?</h2>
-                <p>The player has the ability to grab any physical element, including their ball. We thought that throwing the ball to break things was a good idea.</p>
                 <div class="gif-container">
-                    <div class="gif">
-                        <img src="../Gif/BreakGif.gif" alt="gif">
-                    </div>
                     <div class="gif-info">
-                        <p>In the game, all elements with the weathered wood texture can be broken by sending our ball towards them.</p>
-                        <p>It is also possible to grab crates to throw and break them.</p>
+                        <h3>Hammer game</h3>
+                        <p>For this mini-game, the player must unlock the stone blocking the water flow.</p>
+                        <p>To do this, they need to press the screen when the cursor is aligned with the green bar.</p>
+                        <p>The green bar decreases with each successful hit. Succeed three times to win the mini-game !</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/Marteau.gif" alt="gif">
                     </div>
                 </div>
 
-                <h2>● The Player</h2>
-                <p>Managing the player was also a challenge. In Unreal Engine, the default character is derived from the <strong>"Character"</strong> class, which uses <strong>"Character Movement"</strong>.
-                    The problem with this is that it ignores physical constraints that are not predefined within it. Unfortunately, the system mentioned earlier did not work in this case.</p>
-                <p>The solution I found is to use the parent class <strong>"Pawn"</strong> and employ another movement management system, <strong>"FloatingPawnMovement"</strong>, which is much more permissive.</p>
-
-                <div class="details-img"> <img src="../Image/PawnCharacter.jpg" alt="PawnCharacter"> </div>
-
-                <h3>The counterparts</h3>
-                <p>The counterpart of this is that there are many features that don't exist, and we have to code them ourselves.</p>
-                <p>For example, we could mention the management of <strong>gravity</strong>, the <strong>Jump</strong> function, or even the <strong>On Landed </strong>event,
-                    which allows the detection of the player when they touch the ground.</p>
-
-                <h2>● What's next ?</h2>
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>The fall</h3>
+                        <p>For this mini-game, the player must help the revolutionaries topple the statue.</p>
+                        <p>To do so, they need to quickly press the screen to increase the gauge.</p>
+                        <p>Once the gauge is full, you win the mini-game !</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/Statue.gif" alt="gif">
+                    </div>
+                </div>
 
             </div>
         </div>
