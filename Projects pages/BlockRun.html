@@ -134,56 +134,32 @@
                 <p>J'ai également rajouté des effets visuels plaisants à regarder toujours dans cette optique de dopamine. </p>
                 <p></p>
 
-                <h3>Aiming aid</h3>
-                <p>The chain is entirely physics-based. After numerous tests, the rig seems to be the best option for achieving a stable chain without any glitches.</p>
-
+                <h3>A pleasant touch</h3>
+                <p>Etant donné que ce jeu est concu pour les utilisateurs mobile, cela impose certaine contrainte.
+                    Comme par exemple l surface du telephone que l'utilisateur utilise est spéciale comme vu sur l'image en dessous.
+                    Il a fallu donc réfléchir au lancer du cube. </p>
+                <p>Le gif de droite montre que le cube lorsqu'il est lancé en diagonal reviens dans une direction vertical ou horisontal afin d'aider le joueur et éviter la frustation.</p>
                 <div class="gif-container">
                     <div class="gif">
-                        <img src="../Gif/SlideGif.gif" alt="gif">
+                        <img src="../Image/UX_Mobile.png" alt="gif">
                     </div>
                     <div class="gif">
-                        <img src="../Gif/PorteGif.gif" alt="gif">
+                        <img src="../Gif/SlowGif.gif" alt="gif">
                     </div>
                 </div>
                 <p></p>
 
                 <div class="gif-container">
                     <div class="gif-info">
-                        <h3>Feeling of constraint</h3>
-                        <p>The player is limited in their movements when the chain is taut.</p>
-                        <p>To achieve this result, you simply need to increase the damping of the ball when it's on the ground, which prevents the ball from moving too quickly,
-                            and consequently, the player as well.</p>
+                        <h3>Visual Effects</h3>
+                        <p>Il est important de récompenser le joueur à chaque fois qu'il fait une bonne action. C'est pour cela que les effets visuels apparaissent a chaque point gagné. </p>
+                        <p>Mais lorsque le joueur rate son coup, des effets visuel et des vibrations sont aussi présent pour lui faire comprendre son erreur.</p>
                         <p></p>
                     </div>
                     <div class="gif">
-                        <img src="../Gif/TrainerGif.gif" alt="gif">
+                        <img src="../Gif/VisualEffectGif.gif" alt="gif">
                     </div>
                 </div>
-                <h2>● A little bit of easy fun ?</h2>
-                <p>The player has the ability to grab any physical element, including their ball. We thought that throwing the ball to break things was a good idea.</p>
-                <div class="gif-container">
-                    <div class="gif">
-                        <img src="../Gif/BreakGif.gif" alt="gif">
-                    </div>
-                    <div class="gif-info">
-                        <p>In the game, all elements with the weathered wood texture can be broken by sending our ball towards them.</p>
-                        <p>It is also possible to grab crates to throw and break them.</p>
-                    </div>
-                </div>
-
-                <h2>● The Player</h2>
-                <p>Managing the player was also a challenge. In Unreal Engine, the default character is derived from the <strong>"Character"</strong> class, which uses <strong>"Character Movement"</strong>.
-                    The problem with this is that it ignores physical constraints that are not predefined within it. Unfortunately, the system mentioned earlier did not work in this case.</p>
-                <p>The solution I found is to use the parent class <strong>"Pawn"</strong> and employ another movement management system, <strong>"FloatingPawnMovement"</strong>, which is much more permissive.</p>
-
-                <div class="details-img"> <img src="../Image/PawnCharacter.jpg" alt="PawnCharacter"> </div>
-
-                <h3>The counterparts</h3>
-                <p>The counterpart of this is that there are many features that don't exist, and we have to code them ourselves.</p>
-                <p>For example, we could mention the management of <strong>gravity</strong>, the <strong>Jump</strong> function, or even the <strong>On Landed </strong>event,
-                    which allows the detection of the player when they touch the ground.</p>
-
-                <h2>● What's next ?</h2>
 
             </div>
         </div>
