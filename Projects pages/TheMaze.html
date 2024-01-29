@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/TheMaze.css">
+    <title>BlockRun | Roche Hugo</title>
+</head>
+
+
+<body>
+
+<!-- Header -->
+<section id="header">
+    <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a href="../index.html">
+                    <h1><span>R</span>oche <span>H</span>ugo</h1>
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="../index.html" data-after="Projects">Home</a></li>
+                    <li><a href="#contact" data-after="Projects">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Hero -->
+<section id="hero">
+    <div class="hero container"></div>
+</section>
+
+
+
+<!-- Overview -->
+<section id="overview">
+
+    <div class="overview container">
+
+        <div class ="overview-header">
+            <h1 class="section-title"><span>The Maze</span></h1>
+        </div>
+
+        <div class="overview-resume">
+            <em>"Bravez tous les mini-jeux pour trouver la sortie !"</em>
+        </div>
+
+        <div class="overview-facts-container">
+            <table style="margin: auto;">
+                <tbody>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Project Type</span>
+                        </td>
+                        <td class="overview-facts-cell">University</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Software Used</span>
+                        </td>
+                        <td class="overview-facts-cell"> Visual Studio</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Languages Used</span>
+                        </td>
+                        <td class="overview-facts-cell"> C++</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="overview-trailer-header">
+            <h1>Gameplay</h1>
+        </div>
+
+        <div class="overview-trailer">
+            <iframe width="1120" height="630"
+                    src="https://www.youtube.com/embed/QCu2Mbn_P-4?si=3CnC997Igch08r8c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="details-container">
+            <div class="details-header">
+                <h1>Details</h1>
+            </div>
+
+            <p>Sur ce projet nous devions faire un jeu sans bibliothèque graphique. Nous avons donc décidé de faire un labyrinthe fait de carré en ASCII.</p>
+            <p>Nous étions plusieurs sur ce projet. De mon coté je me suis occupé : </p>
+            <p>● Des 3C. C'est à dire le déplacement du joueur, comprenant les cases sur lequels on peut aller ou non. Mais aussi le système de point de vie.</p>
+            <p>● Le système de brouillard se dévoilant lorsque le joueur se déplace.</p>
+            <p>● Le système d'inventaire et le fonctionnement des items.</p>
+            <p>● Une partie des Minis-jeux. (Ceux présentés plus bas sont uniquement ceux que j'ai fais)</p>
+
+            <div class="details-body">
+                <h2>● Règles du jeu</h2>
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>La partie labyrinthe</h3>
+                        <p>Pour finir le jeu il suffit de trouver la sortie marquée par la case verte. Malheureusement il fait noir et vous devez explorer pour devoiler le chemin petit à petit.</p>
+                        <p>Vous avez, pour vous aider, un inventaire contenant des potions et des bombes.</p>
+                        <p>Les potions vous permettent de récupérer des points de vie.</p>
+                        <p>Tandis que la bombe vous permet de casser les cases autour de vous sur les axes horizontal et vertical.</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/ClassicBlockRunGif(2).gif" alt="gif">
+                    </div>
+                </div>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>La partie Mini-jeu</h3>
+                        <p>Vous rencontrerez sur votre route des cases bleues représentant les minis-jeux. Si vous perdez au mini jeu votre nombre de point de vie diminura alors.</p>
+                        <p>Une fois le mini jeu fini vous pourrez continuer votre route.</p>
+                        <p>Si vous remportez la victoire, en plus de ne pas perdre de point de vie, vous obtiendrez peut être une potion ou une bombe !</p>
+
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/HardBlockRunGif.gif" alt="gif">
+                    </div>
+                </div>
+
+                <h2>● Make easy fun</h2>
+
+                <p>Pour ce jeu, je voulais creer le fun instantané en procurant de le plus de dopamine possible au joueur. C'est pour cela qu'il faut éviter le plus possible au joueur d'être frustrer.</p>
+                <p>J'ai également rajouté des effets visuels plaisants à regarder toujours dans cette optique de dopamine. </p>
+                <p></p>
+
+                <h3>A pleasant touch</h3>
+                <p>Etant donné que ce jeu est concu pour les utilisateurs mobile, cela impose certaine contrainte.
+                    Comme par exemple l surface du telephone que l'utilisateur utilise est spéciale comme vu sur l'image en dessous.
+                    Il a fallu donc réfléchir au lancer du cube. </p>
+                <p>Le gif de droite montre que le cube lorsqu'il est lancé en diagonal reviens dans une direction vertical ou horisontal afin d'aider le joueur et éviter la frustation.</p>
+                <div class="gif-container">
+                    <div class="gif">
+                        <img src="../Image/UX_Mobile.png" alt="gif">
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/SlowGif.gif" alt="gif">
+                    </div>
+                </div>
+                <p></p>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Visual Effects</h3>
+                        <p>Il est important de récompenser le joueur à chaque fois qu'il fait une bonne action. C'est pour cela que les effets visuels apparaissent a chaque point gagné. </p>
+                        <p>Mais lorsque le joueur rate son coup, des effets visuel et des vibrations sont aussi présent pour lui faire comprendre son erreur.</p>
+                        <p></p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/VisualEffectGif.gif" alt="gif">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><img src="../Image/Phone_Logo.png" /></div>
+                <div class="contact-info">
+                    <h1>Phone</h1>
+                    <h2>07 83 06 23 44</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src=../Image/Mail_Logo.png /></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>hroche3413@gmail.com</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src=../Image/Map_Logo.png /></div>
+                <div class="contact-info">
+                    <h1>Address</h1>
+                    <h2>34070, Montpellier</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+
+<script src="../app.js"></script>
+</body>
+</html>
