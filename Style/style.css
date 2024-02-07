@@ -208,7 +208,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url(../Image/Calque1.jpg);
+    background-image: url(../Image/MainBackground.jpg);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -231,32 +231,65 @@ p {
 
 #hero .container{
     min-height: 100vh;
+    flex-direction: column;
 }
 
 #hero .hero {
     max-width: 1500px;
     margin: 0 auto;
     padding: 0 100px;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
 }
 
 #hero h2 {
     display: block;
-    width: fit-content;
     font-size: 4rem;
     position: relative;
-    color: white;
-    padding-bottom: 30px;
+    color: #001a21;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#hero .hero-button{
+    margin :20px;
+    padding-top: 5px;
+
+    transition: 0.3s ease transform;
+}
+#hero .button-container{
+    margin-top: 100px;
+}
+
+#hero h3 {
+    display: block;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    transition: 0.3s ease transform;
+    animation: text_reveal_button 3s ease forwards;
+    animation-delay: 1.5s;
+    font-family: 'Montserrat', sans-serif;
+}
+#hero .hero-button:hover h3{
+    transform: scale(1.05);
+}
+#hero .hero-button:hover h3{
+    background-color: #082841;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
 }
 
 #hero h1 {
     display: block;
-    width: fit-content;
     font-size: 3rem;
     position: relative;
     color: transparent;
+    text-align: center;
     animation: text_reveal 0.5s ease forwards;
     animation-delay: 1s;
+    margin-bottom: 150px;
 }
 #hero h1:nth-child(2) {
     animation-delay: 1s;
@@ -275,7 +308,7 @@ p {
     animation: text_reveal_box 1s ease;
     animation-delay: 0.5s;
 }#hero h2 span {
-     color : deepskyblue;
+     color : #00a1d7;
  }
 #hero h1:nth-child(2) span {
     animation-delay: 0.5s;
@@ -424,8 +457,6 @@ p {
     padding: 20px;
     transition: 0.3s ease transform;
     font-weight: 400;
-
-
 }
 #projects .project-footer:hover h1{
     transform: scale(1.05);
@@ -607,12 +638,17 @@ p {
 }
 @keyframes text_reveal {
     100% {
-        color: white;
+        color: #001a21;
+    }
+}
+@keyframes text_reveal_button {
+    100% {
+        color: #ffffff;
     }
 }
 @keyframes text_reveal_name {
     100% {
-        color: deepskyblue;
+        color: #00a0d6;
     }
 }
 @keyframes video_reveal {
@@ -638,10 +674,13 @@ p {
 
     /* Hero */
     #hero h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     #hero h2 {
-        font-size: 7rem;
+        font-size: 10rem;
+    }
+    #hero h3 {
+        font-size: 6rem;
     }
     /* End Hero */
 
