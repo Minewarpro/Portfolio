@@ -123,7 +123,7 @@
                 </div>
 
 
-                <h2>● 3C</h2>
+                <h2>● The Mouvement</h2>
 
                 <p>The keyword for the 3Cs is "intentions." We have chosen to create a very dynamic game focused on movement.</p>
                 <p>To address this issue, we have chosen to offer a wide range of movement options available to the player, as shown in the GIF below. </p>
@@ -159,45 +159,63 @@
                 </div>
 
                 <div class="gif-container">
-                <div class="gif-info">
-                    <h3>Slide</h3>
-                    <p>The slide is the ability to move that allows you to gain the most speed in the game.</p>
-                    <p>If you slide down a slope, it continues your slide until the end of it.</p>
-                    <p>If you jump during the slide, you gain a speed and height boost on your jump. It's useful for experienced players who want to optimize their movement</p>
-                    <p>The slide is useful for fast movement, but it can be punishing if used incorrectly in combat. However, it can also be an asset for dodging certain projectile patterns.</p>
-                </div>
-                <div class="gif">
-                    <img src="../Gif/DashDodge.gif" alt="gif">
-                </div>
-            </div>
-
-                <h2>● The Polish</h2>
-                <p>"For me, it may be the most important phase to have a good game.</p>
-                <p>"For me, it may be the most important phase to have a good game.</p>
-                
-                <div class="gif-container">
                     <div class="gif">
-                        <img src="../Gif/BreakGif.gif" alt="gif">
+                        <img src="../Gif/Slide.gif" alt="gif">
                     </div>
                     <div class="gif-info">
-                        <p>In the game, all elements with the weathered wood texture can be broken by sending our ball towards them.</p>
-                        <p>It is also possible to grab crates to throw and break them.</p>
+                        <h3>Slide</h3>
+                        <p>The slide is quite particular in this game. It follows the direction of the camera even if the change is very abrupt. This allows experienced players to react to the bullet.</p>
+                        <p>This skill is the movement ability that provides the biggest speed boost in the game. Therefore, it's very enjoyable to use. Moreover,
+                            if you jump during the slide, you gain a boost in jump height and length.</p>
+                        <p>But be careful not to overuse it because it could backfire against the player since they are more vulnerable to projectiles in this position.</p>
                     </div>
                 </div>
 
-                <h2>● The Player</h2>
-                <p>Managing the player was also a challenge. In Unreal Engine, the default character is derived from the <strong>"Character"</strong> class, which uses <strong>"Character Movement"</strong>.
-                    The problem with this is that it ignores physical constraints that are not predefined within it. Unfortunately, the system mentioned earlier did not work in this case.</p>
-                <p>The solution I found is to use the parent class <strong>"Pawn"</strong> and employ another movement management system, <strong>"FloatingPawnMovement"</strong>, which is much more permissive.</p>
+                <h2>● The Polish</h2>
 
-                <div class="details-img"> <img src="../Image/PawnCharacter.jpg" alt="PawnCharacter"> </div>
+                <p>For polish, I used three key points. The first is the <strong>Post Process</strong>, the second is the <strong>camera shake</strong>, and finally,
+                    the last one is the <strong>adjustments of values</strong>, often overlooked but in my opinion, one of the most important.
+                    I'll explain what I mean by that right after.</p>
 
-                <h3>The counterparts</h3>
-                <p>The counterpart of this is that there are many features that don't exist, and we have to code them ourselves.</p>
-                <p>For example, we could mention the management of <strong>gravity</strong>, the <strong>Jump</strong> function, or even the <strong>On Landed </strong>event,
-                    which allows the detection of the player when they touch the ground.</p>
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Post Process</h3>
+                        <p>Let's take another look at the example of the dash. Thanks to the slow-motion, you can see the effect brought about by the post-process. </p>
+                        <p>There's a motion blur added along with a distortion of vision and a briefly appearing border image. All of this adds a feeling of dynamism and fluidity.</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/DashSlowMo.gif" alt="gif">
+                    </div>
+                </div>
 
-                <h2>● What's next ?</h2>
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Camera Shake</h3>
+                        <p>It's no secret that camera shake is essential for immersion in the game. That's why I've used it on all the movements in the game.</p>
+                        <p>Here's an example of camera shake during landing. It varies in intensity depending on the duration of the fall. </p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/JumpShake.gif" alt="gif">
+                    </div>
+                </div>
+
+                <h3>Adjustments of values</h3>
+
+                <p>And finally, the last point, value adjustments. To make this clearer, I'll give an example. </p>
+                    <p>When the player changes direction of movement, going from left to right, for example, they gain a slight speed boost for a very short duration,
+                        giving them the sensation of being constantly on their toes. </p>
+                    <p>Another example is the speed curve of the dash, which is not linear but faster at the beginning than at the end to give it more impact.</p>
+
+                <h2>● The Weapons</h2>
+                <p>Currently, there are two weapons available. The first one is the Vajra, which is a short-range weapon dealing high area damage but with a low rate of fire.
+                    <p>The second one is the Chakram, which has a high rate of fire with lower damage and longer range.</p>
+                <p>We added overload to encourage players to switch weapons regularly, forcing them to switch from short to long range, further accentuating movement.</p>
+                <p>Each of the two weapons underwent the same polish process as the movement.</p>
+
+                <div class="details-img"> <img src="../Gif/Vajra.gif" alt="gif"> </div>
+                <div class="details-img"> <img src="../Gif/Chakram.gif" alt="gif"> </div>
+
+                <p>PS: The visual effects (VFX) and animations will be presented and detailed here later when they are finalized.</p>
 
             </div>
         </div>
