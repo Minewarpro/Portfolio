@@ -343,6 +343,363 @@ p {
     color : white;
 }
 
+
+
+
+
+
+/* Conteneur principal */
+.carousel-wrapper {
+    display: flex;
+    align-items: Center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 1rem 0;
+    position: relative;
+  }
+
+
+
+.carousel-container {
+    overflow: hidden;
+    flex: 1;
+  }
+
+
+  /* Carrousel avec les projets */
+  .projects-carousel {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 1rem 0;
+  
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE */
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    scroll-snap-type: x mandatory;
+  }
+  .projects-carousel::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+  
+  /* Ligne de projets */
+  .projects-track {
+    display: flex;
+    gap: 12rem;
+    padding: 0 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  /* Carte projet */
+  .project-card {
+    width: 355px;            /* Largeur fixe */
+    height: 700px;           /* Hauteur = 2x la largeur */
+    background-color: #1e1e1e;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+  
+  .project-image-wrapper {
+    height: 270px;
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+  }
+  
+  .project-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  
+  .project-image-wrapper:hover img {
+    transform: scale(1.05); /* effet uniquement sur l'image */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 45%;             /* Moitié supérieure pour l’image */
+    object-fit: cover;
+    border-radius: 36px;
+  }
+
+
+  .project-card h3 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  /* Info Bar */
+
+  .project-info-bar {
+    display: flex;
+    width: 80%;
+    margin: 1rem auto; /* centrée avec marge gauche/droite */
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .project-info-bar .info-left,
+  .project-info-bar .info-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    gap: 0.4rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Couleurs contrastées */
+  .project-info-bar .info-left {
+    background-color: #333;
+    color: #ccc;
+    align-items: center;
+    display: inline-flex;
+  }
+
+
+  .project-info-bar .info-right {
+    background-color: #5c9eff;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .project-info-bar .info-right a {
+    color: white;
+    text-decoration: underline; /* souligné même sans hover */
+    display: flex;
+    align-items: center; /* Ceci aligne le texte dans le lien */
+    height: 100%;
+  }
+  
+  .project-info-bar .info-right a:hover {
+    text-decoration: underline;
+  }
+
+/* Icônes */
+.project-info-bar .icon {
+    width: 20px;   /* Largeur de l'icône */
+    height: 20px;  /* Hauteur de l'icône */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+  }
+
+
+  
+  /* Texte */
+  .project-meta {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .project-meta h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  
+  .project-meta h2 span {
+    background: #6c63ff;
+    color: white;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    margin: 0px 5px;
+  }
+  
+  .project-meta p {
+    font-size: 0.9rem;
+    color: white;
+    padding: 0 3rem 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+  }
+
+
+  .card-description {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligne le contenu en haut */
+    height: 100px; /* facultatif, pour forcer un espace vertical régulier */
+  }
+  
+  .card-description p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 90%;
+  }
+
+  
+  /* Flèches */
+  .carousel-btn {
+    margin-top: .8rem;
+    width: 3rem;
+    height: 50rem;
+    backdrop-filter: blur(6px);
+    /*background-color: rgba(20, 59, 189, 0.219); /* léger blanc transparent */
+    background-color: transparent;
+    color: #fff;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    font-size: 12rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 0.3s;
+  }
+
+  .carousel-btn img {
+    width: 100px;  /* Ajuste selon le design souhaité */
+    height: 100px;
+  }
+  
+  .carousel-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-btn.left {
+    left: -40rem; /* 👈 place la flèche gauche en dehors */
+  }
+  
+  .carousel-btn.right {
+    right: -40rem; /* 👈 place la flèche droite en dehors */
+  }
+  
+
+
+  /* Card Footer */
+  .card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .see-more-link {
+    color: #5c9eff; 
+    font-weight: 500;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .see-more-link:hover {
+    color: #ffffff;
+  }
+
+
+  /* Responsive pour mobile */
+
+  @media (max-width: 1024px) {
+    .project-card {
+        flex: 0 0 calc((100% - 2rem) / 2); /* 2 cartes visibles */
+    }
+
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 0.4rem 0.8rem;
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+    .project-card {
+      width: 250px;
+      flex: 0 0 100%;
+    }
+  
+    .carousel-btn {
+      font-size: 1.5rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+
+.tag {
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Moteurs de jeu */
+  .tag.engine {
+    background-color: #3b58d0; /* violet - Unity / Unreal */
+  }
+  
+  /* Langages de programmation */
+  .tag.language {
+    background-color: #5d34b0; /* orange - JS, Blueprint, C# */
+  }
+  
+  /* Plateformes */
+  .tag.platform {
+    background-color: #b03434; /* vert - PC, Web, Mobile */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #projects .projects-row{
     align-self: center;
     justify-content: center;

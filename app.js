@@ -64,3 +64,31 @@ function pause(video, url){
     }, 100 );
 
 }
+
+/* Test Slider */
+
+
+
+  const btnLeft = document.querySelector(".carousel-btn.left");
+  const btnRight = document.querySelector(".carousel-btn.right");
+  const carousel = document.querySelector(".projects-carousel");
+
+const card = document.querySelector('.project-card');
+
+const cardStyle = getComputedStyle(card);
+const cardWidth = card.offsetWidth;
+const gap = parseInt(cardStyle.marginRight || 0) || 32; // espace entre les cartes
+
+const scrollAmount = 3500;
+
+document.getElementById('scroll-left').addEventListener('click', () => {
+  carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+document.getElementById('scroll-right').addEventListener('click', () => {
+  carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+
+
+
