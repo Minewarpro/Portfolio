@@ -10,6 +10,8 @@ var video_2 = document.getElementById("video_2");
 timeoutId = 0;
 lastvideo = "";
 
+
+/*
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     mobile_menu.classList.toggle('active');
@@ -64,10 +66,9 @@ function pause(video, url){
     }, 100 );
 
 }
+    */
 
 /* Test Slider */
-
-
 
   const btnLeft = document.querySelector(".carousel-btn.left");
   const btnRight = document.querySelector(".carousel-btn.right");
@@ -89,6 +90,26 @@ document.getElementById('scroll-right').addEventListener('click', () => {
   carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 });
 
+function fixViewportHeight() {
+  // Tente de forcer le navigateur à recalculer
+  setTimeout(() => {
+    const realHeight = window.innerHeight;
+    console.log("Real height after delay:", realHeight);
+    document.body.setAttribute('data-real-height', realHeight);
+    // Ici tu pourrais relancer ton layout, recalculer des dimensions, etc.
+  }, 100);
+}
 
+// À appeler après un léger scroll ou interaction
+window.addEventListener("load", () => {
+  // Scroll imperceptible pour forcer le recalcul
+  window.scrollTo(0, 1);
+  window.scrollTo(0, 0);
 
+  fixViewportHeight();
+});
 
+function triggerReflow() {
+  const temp = document.body.offsetHeight;
+  document.body.style.transform = 'scale(1)'; // Un changement CSS mineur
+}

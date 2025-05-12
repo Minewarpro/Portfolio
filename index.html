@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/style.css">
     <title>Portfolio | Roche Hugo</title>
+
 </head>
 
 <body>
-<!-- Header -->
+
+<!-- Header 
 <section id="header">
     <div class="header container">
         <div class="nav-bar">
@@ -31,14 +37,24 @@
         </div>
     </div>
 </section>
-<!-- End Header -->
+End Header -->
 
 <!-- Hero Section  -->
 <section id="hero">
     <div class="hero container">
-        <div>
-            <h2><span>H</span>ugo <span>R</span>oche</h2>
+        <div class ="hero-titles">
+            <h2>Hugo Roche</h2>
              <h1>Technical Game Designer<span></span></h1>
+         </div>
+         <div class="hero-details">
+            <p>Hi, and welcome to my website! I’m a game designer with a keen interest in systemic design, 
+                3Cs and cooperative dynamics in games. I strive to create engaging experiences that bring 
+                players together to form positive communities, 
+                by prototyping and communicating efficiently with my team members.</p>
+
+                <p>I'm currently working as a technical game designer at Osome Studio</p>
+                <p></p>
+                <p ><span>(Click Play to view projects)</span></p>
          </div>
          <div class="button-container"><div class="hero-button"><a href="#projects" data-after="Projects"><h3>Play</h3></a></div>
              <div class="hero-button"><a href="#about" data-after="About"><h3>Credits</h3></a></div>
@@ -259,153 +275,7 @@
 </section>
 <!-- End Projects Section -->
 
-
-
-
-
-
-<!-- All Projects Section -->
-
-<!-- 
-<section id="all-projects">
-<div class="projects container" >
-
-        <div class="projects-header">
-            <h1 class="section-title"><span>All</span> Projects</h1>
-        </div>
-    
-
-        <div class="projects-row">
-
-                    <div class="project-cover">
-                        <div class="cover">
-                            <a href="Projects%20pages/Unchained.html">
-                            <img src=Image/Unchained.jpg />
-                            </a>
-                        </div>
-                        <div class="cover-info">
-                            <h2><span>Unreal 5</span> <span>Blueprint</span> <span>PC</span> </h2>
-                        </div>
-                        <div class="details">
-                            <p> 3D first person / horror game</p>
-                        </div>
-                    </div>
-
-            <div class="project-cover">
-                <div class="cover">
-                    <a href="Projects%20pages/Ylmo.html">
-                        <img src=Image/Ylmo.jpg  alt="Ylmo image cover"/>
-                    </a>
-                </div>
-                <div class="cover-info">
-                    <h2><span>Phaser</span> <span>JavaScript</span> <span>Web</span> <span>PC</span></h2>
-                </div>
-                <div class="details">
-                    <p> 2D 3rd person platformer / runner</p>
-                </div>
-            </div>
-
-                <div class="project-cover">
-                    <div class="cover">
-                        <a href="Projects%20pages/Promenade.html">
-                            <img src=Image/PromenadeCover.jpg />
-                        </a>
-                    </div>
-                    <div class="cover-info">
-                        <h2><span>Unity</span> <span>C#</span> <span>Mobile</span></h2>
-                    </div>
-                    <div class="details">
-                        <p> 3D 3rd person exploration / Serious Game</p>
-                    </div>
-                </div>
-
-
-            </div>
-        <div class="projects-row">
-
-            <div class="project-cover">
-                <div class="cover">
-                    <a href="Projects%20pages/TheMaze.html">
-                        <img src=Image/Maze.jpg />
-                    </a>
-                </div>
-                <div class="cover-info">
-                    <h2><span>Visual Studio</span> <span>C++</span> <span>PC</span></h2>
-                </div>
-                <div class="details">
-                    <p> 2D Party Game</p>
-                </div>
-            </div>
-
-            <div class="project-cover">
-                <div class="cover">
-                    <a href="Projects%20pages/BlockRun.html">
-                        <img src=Image/BlockRun.png />
-                    </a>
-                </div>
-                <div class="cover-info">
-                    <h2><span>Unity</span> <span>C#</span> <span>Mobile</span> <span>PC</span></h2>
-                </div>
-                <div class="details">
-                    <p> 3D casual game</p>
-                </div>
-            </div>
-
-
-        </div>
-
-
-        <div class="projects-header">
-            <h1 class="section-title"><span>Jam</span> Projects</h1>
-        </div>
-
-        <div class="projects-row">
-
-
-
-            <div class="project-cover-2">
-                <div class="cover">
-                    <a href="Projects%20pages/EthyloRun.html">
-                        <img src=Image/EthyloRun.png />
-                    </a>
-                </div>
-                <div class="cover-info">
-                    <h2><span>Unreal</span> <span>Blueprint</span> <span>PC</span> <span>JAM</span></h2>
-                </div>
-                <div class="details">
-                    <p> 3D 3rd person runner / Local Multiplayer</p>
-                </div>
-            </div>
-
-            <div class="project-cover-2">
-                <div class="cover">
-                    <a href="Projects%20pages/Morpong.html">
-                        <img src=Image/Morpong.png />
-                    </a>
-                </div>
-                <div class="cover-info">
-                    <h2><span>Unreal</span> <span>Blueprint</span> <span>PC</span> <span>JAM</span></h2>
-                </div>
-                <div class="details">
-                    <p> 3D Party Game / Local Multiplayer</p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="project-footer">
-            <a href="https://minewarpro.itch.io">
-                <h1>See <span>ALL</span> on my itchio page</h1>
-            </a>
-        </div>
-        
-
-    </div>
-</section>
-
--->
-
+<!-- All projects Section -->
 <section id="all-projects">
   <div class="projects container">
 
@@ -413,9 +283,11 @@
       <h1 class="section-title">All <span>Projects</span></h1>
     </div>
 
-    <!-- 🔹 Première sous-partie -->
+    <!-- Première sous-partie -->
     <div class="project-category">
       <h2 class="category-title"><span>01.</span> Professional Projects</h2>
+
+      <!-- Ligne de Projets 1 -->
       <div class="project-grid">
 
         <div class="project-thumbnail">
@@ -428,6 +300,37 @@
                 </div>
                 <div class="details">
                     <p>3D - First Person - Horror Game</p>
+                </div>
+                <div class="tag">
+                    <span class="tag engine">Unreal 5</span>
+                    <span class="tag language">Blueprint</span>
+                    <span class="tag platform">PC</span>
+                </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Ajoute plus de projets ici -->
+      </div>
+    </div>
+
+    <!-- Deuxième sous-partie -->
+    <div class="project-category">
+      <h2 class="category-title"><span>02.</span> Student Projects</h2>
+
+      <!-- Ligne de Projets 1 -->
+      <div class="project-grid">
+
+        <div class="project-thumbnail">
+          <a href="Projects%20pages/Nirvana.html">
+            <img src="Image/Nirvana.jpg" alt="Nirvana">
+
+            <div class="overlay">
+                <div class="details-title">
+                    <p>Nirvana</p>
+                </div>
+                <div class="details">
+                    <p>3D - First Person - Fast FPS Bullet Hell</p>
                 </div>
                 <div class="tag">
                     <span class="tag engine">Unreal 5</span>
@@ -477,47 +380,87 @@
                 </div>
             </div>
           </a>
-        </div>
-
-        <!-- Ajoute plus de projets ici -->
+        </div>      
       </div>
-    </div>
 
-    <!-- 🔹 Deuxième sous-partie -->
-    <div class="project-category">
-      <h2 class="category-title"><span>02.</span> Personal & student Projects</h2>
+      <!-- Ligne de Projets 2 -->
       <div class="project-grid">
 
         <div class="project-thumbnail">
           <a href="Projects%20pages/Unchained.html">
             <img src="Image/Unchained.jpg" alt="Unchained">
-          </a>
-        </div>
 
-        <div class="project-thumbnail">
-          <a href="Projects%20pages/Ylmo.html">
-            <img src="Image/Ylmo.jpg" alt="Ylmo">
+            <div class="overlay">
+                <div class="details-title">
+                    <p>Unchained</p>
+                </div>
+                <div class="details">
+                    <p>3D - First Person - Horror Game</p>
+                </div>
+                <div class="tag">
+                    <span class="tag engine">Unreal 5</span>
+                    <span class="tag language">Blueprint</span>
+                    <span class="tag platform">PC</span>
+                </div>
+            </div>
           </a>
         </div>
-
-        <div class="project-thumbnail">
-          <a href="Projects%20pages/Promenade.html">
-            <img src="Image/PromenadeCover.jpg" alt="Promenade">
-          </a>
-        </div>
-        
       </div>
+
     </div>
 
-    <!-- Ajoute plus de projets ici -->
+    <!-- Troisième sous-partie -->
+    <div class="project-category">
+      <h2 class="category-title"><span>03.</span> Personal Projects</h2>
 
-  </div>
+      <!-- Ligne de Projets 1 -->
+      <div class="project-grid">
+
+        <div class="project-thumbnail">
+          <a href="Projects%20pages/BlockRun.html">
+            <img src="Image/BlockRun.png" alt="BlockRun">
+
+            <div class="overlay">
+                <div class="details-title">
+                    <p>Block Run</p>
+                </div>
+                <div class="details">
+                    <p>3D - Hyper Casual</p>
+                </div>
+                <div class="tag">
+                    <span class="tag engine">Unity</span>
+                    <span class="tag language">C#</span>
+                    <span class="tag platform">Mobile</span>
+                </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-thumbnail">
+          <a href="Projects%20pages/BlockRun.html">
+            <img src="Image/BlockRun.png" alt="BlockRun">
+
+            <div class="overlay">
+                <div class="details-title">
+                    <p>Unchained</p>
+                </div>
+                <div class="details">
+                    <p>3D - First Person - Horror Game</p>
+                </div>
+                <div class="tag">
+                    <span class="tag engine">Unreal 5</span>
+                    <span class="tag language">Blueprint</span>
+                    <span class="tag platform">PC</span>
+                </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Ajoute plus de projets ici -->
+      </div>
+    </div>
 </section>
-
-
 <!-- End All projects Section -->
-
-
 
 <!-- About Section -->
 <section id="about">
@@ -529,7 +472,7 @@
         </div>
         <div class="col-right">
             <h1 class="section-title">About <span>me</span></h1>
-            <h2>Gameplay Programmer</h2>
+            <h2>Technical Game Designer</h2>
             <p>Hi ! My name is Hugo, I'm a new developer from France. I'm passionate about the world of video games.
                 I've been immersed in this field since my earliest childhood. So it's only natural that I should be interested in creating these games.
                 I'm currently studying at ESMA Game to learn the profession of gameplay programmer.
@@ -571,7 +514,7 @@
                 <div class="icon"><img src=Image/Map_Logo.png /></div>
                 <div class="contact-info">
                     <h1>Address</h1>
-                    <h2>34070, Montpellier</h2>
+                    <h2>69003, Lyon</h2>
                 </div>
             </div>
         </div>
@@ -593,11 +536,15 @@
             <div class="social-item">
                 <a href="https://minewarpro.itch.io"><img src="Image/Ithcio_Logo.png" /></a>
             </div>
+            <div class="social-item">
+                <a href="https://fr.linkedin.com/in/hugo-roche-5b63a9236"><img src="Image/Linkedin_Logo.png" /></a>
+            </div>
         </div>
     </div>
 </section>
 <!-- End Footer -->
 <script src="app.js"></script>
+
 </body>
 
 </html>
