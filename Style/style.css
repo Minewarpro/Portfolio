@@ -275,7 +275,7 @@ p {
     text-align: left;
     animation: text_reveal 0.5s ease forwards;
     animation-delay: 1s;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: bold;
     font-family: var(--font-main);
 }
@@ -459,8 +459,6 @@ p {
     padding: 0;
     display: flex;
     flex-direction: column;
-
-    
   }
   
   .project-image-wrapper {
@@ -544,6 +542,14 @@ p {
     align-items: center; 
     height: 100%;
   }
+
+  .project-info-bar .info-right p {
+    color: var(--color-neutral);
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    margin-bottom: 5px;
+  }
   
   .project-info-bar .info-right a:hover {
     text-decoration: underline;
@@ -593,24 +599,26 @@ p {
     font-family: 'Montserrat', sans-serif;
   }
 
-
   .card-description {
     text-align: center;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    padding: 0 1rem;
     height: 100px; 
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
   }
   
   .card-description p {
     text-align: center;
     margin: 0;
+    margin-top: 8px;
     font-size: 1.5rem;
     line-height: 1.4;
     color: var(--color-neutral);
-    font-family: var(--font-secondary);
+    font-family: var(--font-main);
     max-width: 90%;
+    font-weight: bold;
   }
   
   /* Flèches */
@@ -784,7 +792,7 @@ p {
 
 #all-projects{
     background-image: url(../Image/BackgroundBreak_4.png); 
-    background-size:2000px 2800px; 
+    background-size:2000px 2700px; 
     background-position: -200px right; 
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -825,7 +833,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: 5rem;
-  gap: 2rem;
   justify-content: flex-start;
 }
 
@@ -837,6 +844,7 @@ p {
   overflow: hidden;
   transition: transform 0.3s ease;
   position: relative;
+  margin-right: 2rem;
 }
 
 .project-thumbnail img {
