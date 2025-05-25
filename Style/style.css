@@ -497,12 +497,27 @@ p {
     transition: transform 0.3s ease;
     display: block;
   }
+
+  .project-image-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
   
   .project-image-wrapper:hover img {
     transform: scale(1.05); 
   }
   
   .project-card img {
+    width: 100%;
+    height: 45%;  
+    object-fit: cover;
+    border-radius: 36px;
+  }
+
+  .project-card video {
     width: 100%;
     height: 45%;  
     object-fit: cover;
