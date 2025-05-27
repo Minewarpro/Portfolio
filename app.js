@@ -113,3 +113,51 @@ function triggerReflow() {
   const temp = document.body.offsetHeight;
   document.body.style.transform = 'scale(1)'; // Un changement CSS mineur
 }
+
+
+
+
+
+
+const videos = document.querySelectorAll('.click-to-play');
+    videos.forEach(video => {
+        video.addEventListener('click', () => {
+        if (video.paused) {
+        video.play()
+        } else {
+        video.pause(); // optionnel : pour faire pause si cliqué à nouveau
+        }
+        });
+    });
+  
+
+
+
+
+const wrappers = document.querySelectorAll('.video-wrapper');
+
+  wrappers.forEach(wrapper => {
+    const video = wrapper.querySelector('video');
+    const icon = wrapper.querySelector('.play-icon');
+
+    // Affiche l'icône au début
+    icon.style.display = 'block';
+
+    wrapper.addEventListener('click', () => {
+      if (video.paused) {
+        icon.style.display = 'none';
+      }
+    });
+    
+    video.addEventListener('ended', () => {
+      icon.style.display = 'block';
+    });
+
+    video.addEventListener('pause', () => {
+      icon.style.display = 'block';
+    });
+
+    video.addEventListener('play', () => {
+      icon.style.display = 'none';
+    });
+  });
