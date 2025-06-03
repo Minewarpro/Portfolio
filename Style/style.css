@@ -269,7 +269,6 @@ p {
     z-index: 1;
     background-size: cover;
     background-position: top center;
-    background-attachment: fixed;
 }
 
 #hero .hero {
@@ -284,7 +283,7 @@ p {
     display: block;
     font-size: 2rem;
     position: relative;
-    color: var(--color-secondary);
+    color: var(--color-neutral);
     padding-bottom: 10px;
     font-family: var(--font-main);
 }
@@ -312,7 +311,7 @@ p {
 .hero-details p{
     font-size: 2.1rem;
     position: relative;
-    color: var(--color-neutral);
+    color: var(--color-main);
     padding-bottom: 10px;
     font-family: var(--font-secondary);
     font-weight: 800;
