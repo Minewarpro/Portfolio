@@ -274,7 +274,7 @@ p {
 #hero .hero {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 80px;
     justify-content: center;
     text-align: left;
 }
@@ -284,7 +284,7 @@ p {
     font-size: 2rem;
     position: relative;
     color: var(--color-neutral);
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     font-family: var(--font-main);
 }
 
@@ -349,7 +349,7 @@ p {
 }
 
 #hero .hero-button h3{
-    background: linear-gradient(to right, #f7a172b9 10%, #ffffff00 100%);
+    background-color: var(--color-secondary);
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 10px;
@@ -359,7 +359,6 @@ p {
     transform: scale(1.05);
 }
 #hero .hero-button:hover h3{
-    background-color: var(--color-secondary);
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 10px;
