@@ -11,7 +11,7 @@
 
 <body>
 
-<!-- Header -->
+<!-- Header 
 <section id="header">
     <div class="header container">
         <div class="nav-bar">
@@ -32,13 +32,13 @@
         </div>
     </div>
 </section>
+-->
 
-
-<!-- Hero -->
+<!-- Hero 
 <section id="hero">
     <div class="hero container"></div>
 </section>
-
+-->
 
 
 <!-- Overview -->
@@ -77,7 +77,7 @@
                     </tr>
                     <tr>
                         <td class="overview-facts-cell">
-                            <span>Primary Rol(s)</span>
+                            <span>Primary Role(s)</span>
                         </td>
                         <td class="overview-facts-cell"> Gameplay Programming / Technical Designer</td>
                     </tr>
@@ -87,16 +87,35 @@
 
 
         <div class="overview-trailer-header">
-            <h1>Gameplay</h1>
-            <p>This is a gameplay from our current project. This is a build of the vertical slice. A lot of things are not yet implemented and still need to be done.</p>
+            <h1>Trailer</h1>
+        </div>
+
+        <div class="overview-trailer">
+            <iframe 
+            width="1120" height="630" src="https://www.youtube.com/embed/9a7G_6d8V0w?si=uHLT-tAMVueuGslD" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        
+        </iframe>
+        </div>
+
+        <div class="download-link">
+            <a href="https://store.steampowered.com/app/3462980/Nirvana/"><p>Download On Steam</p></a>
+        </div>
+
+        <div class="overview-trailer-header">
+            <h1>Full Gameplay</h1>
         </div>
         <div class="overview-fullGameplay">
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/IncaiUWWAMA?si=tl_fO9cFfJ1k7VBz"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-            </iframe>
+            <iframe 
+            width="1120" height="630" src="https://www.youtube.com/embed/1U0Vz80i-VE?si=M1SafXo5ugXtwEan" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
         </div>
 
 
@@ -107,83 +126,43 @@
             </div>
             <div class="details-body">
                 <h2>● Game Concept</h2>
-                <div class="gif-container">
                     <p>The concept of this game is simple yet original. We play in first person in a mystical universe. It's a fast-paced FPS but with the particularity of bullet hell.
                         That means there's a large number of projectiles on the screen, formed with specific patterns. The goal is to dodge them while killing enemies.</p>
-                </div>
 
+                <!--
                 <div class="pillars-container">
                     <div class="details-img"> <img src="../Image/Nirvana_Pillars1.png" alt="PawnCharacter"> </div>
                     <div class="details-img"> <img src="../Image/Nirvana_Pillars2.png" alt="PawnCharacter"> </div>
 
                 </div>
-
+                -->
 
                 <h2>● The Mouvement</h2>
-
-                <p>The keyword for the 3Cs is "intentions." We have chosen to create a very dynamic game focused on movement.</p>
-                <p>To address this issue, we have chosen to offer a wide range of movement options available to the player, as shown in the GIF below. </p>
-
 
                 <div class="gif-container">
 
                     <div class="gif-info">
-                        <h3>Mouvement</h3>
-                        <p>- Double Dash</p>
-                        <p>- Slide </p>
-                        <p>- Mantle</p>
-                        <p>- Double jump</p>
-                        <p>- High move speed </p>
+                        <h3>A lot of polish</h3>
+                        <p>Regarding the movement, I spent most of my time on polish.</p>
+                        <p>I did a lot of testing and back-and-forth to create the best possible gamefeel.</p>
                     </div>
                     <div class="gif">
                         <img src="../Gif/Mouvement.gif" alt="gif">
                     </div>
                 </div>
 
-                <h2>● Quantity is good, but utility is better.</h2>
 
-                <div class="gif-container">
-                    <div class="gif-info">
-                        <h3>Dash</h3>
-                        <p>The dash is perhaps the movement ability that the player will use the most during their game. Therefore, it is crucial that it is well thought out.</p>
-                        <p>We opted for two charges to allow the player to choose whether to consume both in succession to go faster or to use only one for more precision.</p>
-                        <p>The dash is only on the horizontal axis but can move sideways or forwards/backwards to allow the player to more easily dodge projectiles.</p>
-                    </div>
-                    <div class="gif">
-                        <img src="../Gif/DashDodge.gif" alt="gif">
-                    </div>
-                </div>
+                <h2></h2>
+                <h3>Dash & Slide</h3>
+                <p>The dash is perhaps the movement ability that the player will use the most during their game. Therefore, it is crucial that it is well thought out.</p>
+                <p>- Motion blur</p>
+                <p>- Distortion</p>
+                <p>- VFX</p>
+                <p>- 2d Texture</p>
+                <p>- Animations</p>
 
-                <div class="gif-container">
-                    <div class="gif">
-                        <img src="../Gif/Slide.gif" alt="gif">
-                    </div>
-                    <div class="gif-info">
-                        <h3>Slide</h3>
-                        <p>The slide is quite particular in this game. It follows the direction of the camera even if the change is very abrupt. This allows experienced players to react to the bullet.</p>
-                        <p>This skill is the movement ability that provides the biggest speed boost in the game. Therefore, it's very enjoyable to use. Moreover,
-                            if you jump during the slide, you gain a boost in jump height and length.</p>
-                        <p>But be careful not to overuse it because it could backfire against the player since they are more vulnerable to projectiles in this position.</p>
-                    </div>
-                </div>
-
-                <h2>● The Polish</h2>
-
-                <p>For polish, I used three key points. The first is the <strong>Post Process</strong>, the second is the <strong>camera shake</strong>, and finally,
-                    the last one is the <strong>adjustments of values</strong>, often overlooked but in my opinion, one of the most important.
-                    I'll explain what I mean by that right after.</p>
-
-                <div class="gif-container">
-                    <div class="gif-info">
-                        <h3>Post Process</h3>
-                        <p>Let's take another look at the example of the dash. Thanks to the slow-motion, you can see the effect brought about by the post-process. </p>
-                        <p>There's a motion blur added along with a distortion of vision and a briefly appearing border image. All of this adds a feeling of dynamism and fluidity.</p>
-                    </div>
-                    <div class="gif">
-                        <img src="../Gif/DashSlowMo.gif" alt="gif">
-                    </div>
-                </div>
-
+                <div class="details-img"> <img src="../Gif/DashSlowMo.gif" alt="gif"> </div>
+            
                 <div class="gif-container">
                     <div class="gif-info">
                         <h3>Camera Shake</h3>
@@ -194,24 +173,43 @@
                         <img src="../Gif/JumpShake.gif" alt="gif">
                     </div>
                 </div>
-
-                <h3>Adjustments of values</h3>
-
-                <p>And finally, the last point, value adjustments. To make this clearer, I'll give an example. </p>
-                    <p>When the player changes direction of movement, going from left to right, for example, they gain a slight speed boost for a very short duration,
-                        giving them the sensation of being constantly on their toes. </p>
-                    <p>Another example is the speed curve of the dash, which is not linear but faster at the beginning than at the end to give it more impact.</p>
-
+                
                 <h2>● The Weapons</h2>
-                <p>Currently, there are two weapons available. The first one is the Vajra, which is a short-range weapon dealing high area damage but with a low rate of fire.
-                    <p>The second one is the Chakram, which has a high rate of fire with lower damage and longer range.</p>
-                <p>We added overload to encourage players to switch weapons regularly, forcing them to switch from short to long range, further accentuating movement.</p>
-                <p>Each of the two weapons underwent the same polish process as the movement.</p>
+                <p>There are two weapons available.</p>
+                <p>Each of the two weapons underwent the same polish process as the movement :</p>
+                <p>- Camera</p>
+                <p>- Animations</p>
+                <p>- VFX</p>
+
+
+                <h2></h2>
+                <h3>Vajra</h3>
+                <p>- The first one is the Vajra => Short-range | High area damage | Low fire rate</p>
+                <p>This weapon is a high-risk, high-reward melee tool, perfect for quickly eliminating swarmers.</p>
 
                 <div class="details-img"> <img src="../Gif/Vajra.gif" alt="gif"> </div>
+
+                <h2></h2>
+                <h3>Chakram</h3>
+                <p>- The second one is the Chakram => Long-range | Single target | High fire rate</p>
+                <p>This weapon encourages the player to keep their distance. It's much more comfortable for dealing with bullet hell situations and ranged enemies.</p>
+
                 <div class="details-img"> <img src="../Gif/Chakram.gif" alt="gif"> </div>
 
-                <p>PS: The visual effects (VFX) and animations will be presented and detailed here later when they are finalized.</p>
+
+                <h2>● The Bullet Hell</h2>
+                <p>The main challenge for the bullet hell was performance optimization.</p>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Bullet Pooling System</h3>
+                        <p>The first solution for performance was to create a pooling system.</p> 
+                        <p>That means instead of spawning and destroying bullets each time, we spawn a large amount at Begin Play and simply teleport them to the right position when needed.</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Image/PoolingSystem.jpg" alt="Image">
+                    </div>
+                </div>
 
             </div>
         </div>
