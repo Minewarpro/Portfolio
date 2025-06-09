@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style_promenade.css">
+    <title>Promenade | Roche Hugo</title>
+</head>
+
+
+<body>
+
+<!-- Header 
+<section id="header">
+    <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a href="../index.html">
+                    <h1><span>R</span>oche <span>H</span>ugo</h1>
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="../index.html" data-after="Projects">Home</a></li>
+                    <li><a href="#contact" data-after="Projects">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+<!-- Hero -->
+<section id="hero">
+    <div class="hero container"></div>
+</section>
+
+
+
+<!-- Overview -->
+<section id="overview">
+
+    <div class="overview container">
+
+        <div class ="overview-header">
+            <h1 class="section-title"><span>Promenade</span></h1>
+        </div>
+
+        <div class="overview-resume">
+            <em>"Embark on an incredible time-travel journey through Montpellier's Peyrou Park and become a fearless adventurer determined to rewrite history !"</em>
+        </div>
+
+        <div class="overview-facts-container">
+            <table style="margin: auto;">
+                <tbody>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Project Type</span>
+                        </td>
+                        <td class="overview-facts-cell"> University / Group Project</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Software Used</span>
+                        </td>
+                        <td class="overview-facts-cell"> Unity</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Languages Used</span>
+                        </td>
+                        <td class="overview-facts-cell"> C#</td>
+                    </tr>
+                    <tr>
+                        <td class="overview-facts-cell">
+                            <span>Primary Role(s)</span>
+                        </td>
+                        <td class="overview-facts-cell"> Gameplay Programming / Technical Artist</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="overview-trailer-header">
+            <h1>Full Gameplay</h1>
+        </div>
+        <div class="overview-fullGameplay">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/jckVzqHXEMg?si=Xkkwsl7sQbIgRUdg?rel=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="details-container">
+            <div class="details-header">
+                <h1>Details</h1>
+            </div>
+            <h2>● The objectives of this game</h2>
+            <p>For this project, we had to think about a serious game centered around the Jardin du Peyrou, a park located in the city of Montpellier, France.
+                We decided to show the player the significant historical stages of this park.
+                So, we came up with the idea of allowing the player to time-travel, landing them at moments marking significant changes in the park.
+            </p>
+            <div class="details-body">
+                <h2>● Time winding system</h2>
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Date change</h3>
+                        <p>The player can simply increase or decrease the date by pressing the up or down arrows. They can then travel to the chosen date.</p>
+                        <p>The available dates are stored in an array that is saved to allow the player to exit the game without concern.</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/DateGif.gif" alt="gif">
+                    </div>
+                </div>
+
+
+                <div class="details-img">
+                    <h4>The code.</h4>
+                    <img src="../Image/CodeMontre.png" alt="code montre">
+                    <p>"NumberToGo" is multiplied by 36 because there are 10 possible digits (0 to 9), so it's sufficient to calculate 360/10 to find the correct rotation.</p>
+                </div>
+                <h3>The time travel</h3>
+                <p>Once the date is chosen, the player can go there using the yellow button just below. To do this, nothing very complicated. It's enough to load the corresponding scene.
+                    Here's the code just below.</p>
+                <div class="details-img">
+                    <img src="../Image/CodeTravel.png" alt="code montre">
+                </div>
+
+                <h2>● Mini Games</h2>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Magic coloring</h3>
+                        <p>For this mini-game, the player has to color the boxes with the corresponding colors. Each color is associated with a date.</p>
+                        <p>A <strong>raycast</strong> is sent from the player's camera to the point where the player clicked. A detection box is hidden behind each part of the drawing to receive this raycast.</p>
+                        <p>Once the coloring is complete with the correct colors, the player wins the mini-game !</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/ColoriagGif.gif" alt="gif">
+                    </div>
+                </div>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>Hammer game</h3>
+                        <p>For this mini-game, the player must unlock the stone blocking the water flow.</p>
+                        <p>To do this, they need to press the screen when the cursor is aligned with the green bar.</p>
+                        <p>The green bar decreases with each successful hit. Succeed three times to win the mini-game !</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/Marteau.gif" alt="gif">
+                    </div>
+                </div>
+
+                <div class="gif-container">
+                    <div class="gif-info">
+                        <h3>The fall</h3>
+                        <p>For this mini-game, the player must help the revolutionaries topple the statue.</p>
+                        <p>To do so, they need to quickly press the screen to increase the gauge.</p>
+                        <p>Once the gauge is full, you win the mini-game !</p>
+                    </div>
+                    <div class="gif">
+                        <img src="../Gif/Statue.gif" alt="gif">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="contact container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><img src="../Image/Phone_Logo.png" /></div>
+                <div class="contact-info">
+                    <h1>Phone</h1>
+                    <h2>07 83 06 23 44</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src=../Image/Mail_Logo.png /></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>hroche3413@gmail.com</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src=../Image/Map_Logo.png /></div>
+                <div class="contact-info">
+                    <h1>Address</h1>
+                    <h2>69003, Lyon</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+
+<script src="../app.js"></script>
+</body>
+</html>
