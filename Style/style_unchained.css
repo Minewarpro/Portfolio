@@ -343,6 +343,9 @@ margin-top: 6vh;
     margin-bottom: 50px;
     margin-top: 50px;
 }
+#overview h3{
+    color: var(--color-secondary);
+}
 #overview .gif-info{
     width: 50%;
     padding-right: 40px;

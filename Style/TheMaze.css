@@ -353,7 +353,9 @@ body {
     margin: 15px 0;
     text-indent: 30px;
  }
-
+#overview h3{
+    color: var(--color-secondary);
+}
 #overview .overview-fullGameplay{
     margin-top: 20px;
     align-items: center;
