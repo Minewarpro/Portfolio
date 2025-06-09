@@ -8,8 +8,8 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            /*"file": "d:\\Users\\User\\Documents\\GitHub\\Portfolio\\index.html"*/
-            "file": "C:\\Users\\hroche\\Documents\\GitHub\\Portfolio\\index.html"
+            "file": "d:\\Users\\User\\Documents\\GitHub\\Portfolio\\index.html"
+            /*"file": "C:\\Users\\hroche\\Documents\\GitHub\\Portfolio\\index.html"*/
         }
     ]
 }
