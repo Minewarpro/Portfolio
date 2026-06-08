@@ -550,7 +550,7 @@ p {
 }
 
   .project-card h3 {
-    font-size: 3rem;
+    font-size:2.3rem;
     margin: 0.5rem 0;
     font-family: var(--font-secondary);
   }
@@ -938,6 +938,8 @@ p {
     font-size: 6rem;
     margin-bottom: 4rem;
     color: var(--color-neutral);
+    text-align: center;
+    line-height: normal;
 }
 
 .overlay .details p{
